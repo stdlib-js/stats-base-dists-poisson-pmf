@@ -1,0 +1,35 @@
+{
+  "name": "@stdlib/stats-base-dists-poisson-pmf",
+  "version": "0.0.0",
+  "description": "Poisson distribution probability mass function (PMF).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./mod.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-base-dists-poisson-pmf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "distribution",
+    "dist",
+    "probability",
+    "pmf",
+    "mass function",
+    "discrete",
+    "counts",
+    "poisson",
+    "univariate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
