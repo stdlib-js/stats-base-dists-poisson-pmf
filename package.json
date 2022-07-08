@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-dists-poisson-pmf",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Poisson distribution probability mass function (PMF).",
   "license": "Apache-2.0",
   "author": {
