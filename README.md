@@ -65,13 +65,13 @@ where `lambda > 0` is the mean parameter.
 ## Usage
 
 ```javascript
-import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@deno/mod.js';
+import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@v0.1.0-deno/mod.js';
 ```
 
 #### pmf( x, lambda )
@@ -145,7 +145,7 @@ y = mypmf( 1.0 );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@deno/mod.js';
+import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@v0.1.0-deno/mod.js';
 
 var lambda;
 var x;
