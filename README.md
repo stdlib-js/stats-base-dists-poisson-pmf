@@ -65,13 +65,13 @@ where `lambda > 0` is the mean parameter.
 ## Usage
 
 ```javascript
-import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@esm/index.mjs';
+import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@v0.2.3-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@v0.2.3-esm/index.mjs';
 ```
 
 #### pmf( x, lambda )
@@ -151,7 +151,7 @@ y = mypmf( 1.0 );
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@esm/index.mjs';
+import pmf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-pmf@v0.2.3-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
