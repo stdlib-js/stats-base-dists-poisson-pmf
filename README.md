@@ -88,7 +88,7 @@ var pmf = require( '@stdlib/stats-base-dists-poisson-pmf' );
 
 #### pmf( x, lambda )
 
-Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda`.
+Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda` at value `x`.
 
 ```javascript
 var y = pmf( 4.0, 3.0 );
@@ -173,6 +173,105 @@ logEachMap( 'x: %d, λ: %0.4f, P(X=x;λ): %0.4f', x, lambda, pmf );
 
 <!-- /.examples -->
 
+<!-- C interface documentation. -->
+
+* * *
+
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/poisson/pmf.h"
+```
+
+#### stdlib_base_dists_poisson_pmf( x, lambda )
+
+Evaluates the [probability mass function][pmf] (PMF) of a [Poisson][poisson-distribution] distribution with mean parameter `lambda` at value `x`.
+
+```c
+double out = stdlib_base_dists_poisson_pmf( 4.0, 3.0 );
+// returns ~0.168
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] double` value at which to evaluate the PMF.
+-   **lambda**: `[in] double` mean parameter.
+
+```c
+double stdlib_base_dists_poisson_pmf( const double x, const double lambda );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/poisson/pmf.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+static int random_discrete_uniform( const int min, const int max ) {
+    return min + ( rand() % ( max - min + 1 ) );
+}
+
+int main( void ) {
+    double lambda;
+    double y;
+    int x;
+    int i;
+
+    for ( i = 0; i < 10; i++ ) {
+        x = random_discrete_uniform( 0, 10 );
+        lambda = random_uniform( 0.0, 20.0 );
+        y = stdlib_base_dists_poisson_pmf( x, lambda );
+        printf( "x: %d, λ: %.4f, P(X=x;λ): %.4f\n", x, lambda, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -220,8 +319,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dists-poisson-pmf.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dists-poisson-pmf
 
-[test-image]: https://github.com/stdlib-js/stats-base-dists-poisson-pmf/actions/workflows/test.yml/badge.svg?branch=v0.2.3
-[test-url]: https://github.com/stdlib-js/stats-base-dists-poisson-pmf/actions/workflows/test.yml?query=branch:v0.2.3
+[test-image]: https://github.com/stdlib-js/stats-base-dists-poisson-pmf/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-dists-poisson-pmf/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dists-poisson-pmf/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dists-poisson-pmf?branch=main
