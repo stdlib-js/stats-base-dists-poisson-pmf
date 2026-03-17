@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-15)
+## Unreleased (2026-03-17)
 
 <section class="features">
 
@@ -20,9 +20,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#3793](https://github.com/stdlib-js/stdlib/issues/3793)
+[#3793](https://github.com/stdlib-js/stdlib/issues/3793), [#10979](https://github.com/stdlib-js/stdlib/issues/10979)
 
 </section>
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`5fe2f3e`](https://github.com/stdlib-js/stdlib/commit/5fe2f3e42f1eba5035e18d8113a04d37088749a5) - **chore:** address commit comments for commit `f63b6ef` [(#11001)](https://github.com/stdlib-js/stdlib/pull/11001) _(by Vipeen Kumar)_
 -   [`f63b6ef`](https://github.com/stdlib-js/stdlib/commit/f63b6ef8ab403a18dfd58ae0884361c8d829d9f1) - **feat:** add C implementation for `@stdlib/stats-base/dists/poisson/pmf` [(#10839)](https://github.com/stdlib-js/stdlib/pull/10839) _(by Siddhartha Mondal, Philipp Burckhardt, stdlib-bot)_
 
 </details>
@@ -46,10 +47,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Philipp Burckhardt
 -   Siddhartha Mondal
+-   Vipeen Kumar
 
 </section>
 
