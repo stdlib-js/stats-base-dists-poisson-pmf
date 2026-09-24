@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-21)
+## Unreleased (2026-09-24)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`4ff1e1d`](https://github.com/stdlib-js/stdlib/commit/4ff1e1d558876533389a1617c8e956df2cd495dc) - **test:** migrate `stats/base/dists/poisson/pmf` to ULP-based assertions [(#15467)](https://github.com/stdlib-js/stdlib/pull/15467) _(by Ujjwal Verma)_
 -   [`112dcfc`](https://github.com/stdlib-js/stdlib/commit/112dcfcf5333be07ec3986193a011220762a0591) - **docs:** fix string interpolation and missing JSDoc annotations [(#13284)](https://github.com/stdlib-js/stdlib/pull/13284) _(by Philipp Burckhardt)_
 -   [`5fe2f3e`](https://github.com/stdlib-js/stdlib/commit/5fe2f3e42f1eba5035e18d8113a04d37088749a5) - **chore:** address commit comments for commit `f63b6ef` [(#11001)](https://github.com/stdlib-js/stdlib/pull/11001) _(by Vipeen Kumar)_
 -   [`f63b6ef`](https://github.com/stdlib-js/stdlib/commit/f63b6ef8ab403a18dfd58ae0884361c8d829d9f1) - **feat:** add C implementation for `@stdlib/stats-base/dists/poisson/pmf` [(#10839)](https://github.com/stdlib-js/stdlib/pull/10839) _(by Siddhartha Mondal, Philipp Burckhardt, stdlib-bot)_
@@ -48,10 +49,11 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Philipp Burckhardt
 -   Siddhartha Mondal
+-   Ujjwal Verma
 -   Vipeen Kumar
 
 </section>
